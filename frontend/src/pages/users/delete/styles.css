@@ -1,0 +1,78 @@
+hr{
+    margin: 5% 0;
+    width: 100%;
+}
+
+
+/* .page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+} */
+
+.p-text{
+    margin: 2% 0;
+    padding: 0 2%;
+}
+
+
+.warning{
+    color: red;
+}
+
+
+.div-userInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10% 0;
+    border: solid 1px gray;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+
+.div-bar-saveCancel{
+     padding: 10%;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.btnForm{
+    width: 120px;
+}
+
+.btnForm:hover{
+    filter: opacity(50%);
+}
+
+.btnSave{
+    background-color: #64B5F6;
+    color: black;
+}
+
+.btnReset{
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+}
+
+
+@media (min-width: 600px) {
+    /* .home-container{
+        width: 70%;
+        margin: 0 15%;
+    } */
+    .hideElement{
+        display: none;
+    }
+
+    .page-content{
+        display: block;
+        /* flex-direction: column;
+        justify-content: center;
+        height: 100%; */
+    }
+
+}

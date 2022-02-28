@@ -1,0 +1,85 @@
+.framepickavatar-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    /* background-size: cover;
+    background-position: center; */
+    z-index: 2;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px black; */
+}
+
+.framepickavatar-content{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/backgrounds/stylish-white-background-with-diagonal-lines_1017-33199.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.hidden{
+    z-index: -1;
+    display: none;
+}
+
+.avatarPreview{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 1px #CCCCCC;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.avatarPreview input{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.progress-container{
+    width: 50%;
+    height: 20px;
+    border: solid 1px black;
+}
+
+.progress-counter{
+    width: 0;
+    height: 100%;
+    background-color: green;
+}
+
+.btnSave, .btnReset{
+    padding: 5% 10%;
+}
+
+@media (min-width: 600px) {
+    .framepickavatar-main{
+        /* width: 50%; */
+        height: 250vh;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .framepickavatar-content{
+        width: 25%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+}

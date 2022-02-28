@@ -1,0 +1,12 @@
+{
+  "name": "condadmapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Helder H Sousa <helder.hermani@gmail.com>",
+  "license": "ISC"
+}

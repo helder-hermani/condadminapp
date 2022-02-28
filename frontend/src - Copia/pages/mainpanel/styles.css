@@ -1,0 +1,144 @@
+
+.home-container{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;  
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f5;
+}
+
+.section-painel{
+    padding: 3%;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+}
+
+.div-localizar{
+    margin: 5% 0;
+    padding: 3%;
+    border: solid 1px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.txtFindCard{
+    display: inline-block;
+    padding: 0 2%;
+    outline: none;
+    width: 80%;
+    border: solid 1px white;
+    font-style: italic;
+}
+
+.footer-menu{
+    width: 100%;
+    background-color: purple;
+}
+
+
+
+@media (max-width: 400px) {
+
+    .cards{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(15, 100px);
+        gap: 15px;
+        background-color: #f1f5f5;
+    }
+
+    .cards div{
+        padding: 5%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fdfdfd;
+    }
+
+    .cards div p{
+        width: 100%;
+        text-align: center;
+        margin: 5%;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    h1, h2, h3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hideElement{
+        display: none;
+    }
+
+    .div-localizar{
+        margin: 3% auto 0;
+        padding: .5% 1%;
+        width: 70%;
+    }
+
+    .txtFindCard{
+        padding: 0 1%;
+        outline: none;
+        width: 90%;
+    }
+
+    .section-painel{
+        padding: 5% 15%;
+    }
+
+    .cards{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(15, 150px);
+        gap: 15px;
+        background-color: #f1f5f5;
+        padding: 5% 0;
+        border: solid 1px transparent;
+    }
+
+    .cards div{
+        padding: 5%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fdfdfd;
+        cursor: pointer;
+        border: solid 5px transparent;
+        transition: all .4s;
+    }
+
+    .cards div:hover{
+        /* border-bottom: solid 5px green; */
+        box-shadow: 0px 0px 15px rgb(0, 128, 0);
+        transform: scale(1.2);
+    }
+
+    .cards div p{
+        width: 100%;
+        text-align: center;
+        margin: 10%;
+    }
+}

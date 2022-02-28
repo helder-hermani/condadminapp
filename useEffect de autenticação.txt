@@ -1,0 +1,20 @@
+    useEffect(async function(){
+        authorization();
+    },[]);
+
+    async function authorization(){
+        const userData = getStoredToken(getUserLoggedData("condAdminUser"));
+        // Lembrar de importar import {getUserLoggedData, getStoredToken, authorized} from '../../services/authorization';
+        // Lembrar de definir const [authUser, setAuthUser]=useState({});
+        setAuthUser(getUserLoggedData("condAdminUser"));
+
+        const resolve = await axiosPhp.post("/users/getlogintoken.php", userData);
+        const validToken = resolve.data;
+        const authOK = authorized(userData, validToken);
+        if (authOK == false){
+            await axiosPhp.post("/users/resetAuthToken.php", userData);
+            rotas.push("/error/expired");
+        }else{
+            console.log("Autenticado");
+        }
+    }

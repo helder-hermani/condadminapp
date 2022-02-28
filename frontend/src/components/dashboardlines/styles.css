@@ -1,0 +1,51 @@
+/* ================================================
+Classes para estilização dinâmica
+================================================ */
+
+.important{
+    background-color: rgb(236, 156, 51);
+}
+
+.ordinary{
+    background-color: #009688;
+}
+
+.complain{
+    background-color: rgb(241 78 78);
+}
+
+/* ================================================== */
+
+
+.dashboard-main-container{
+    background-color: white;
+    display: flex;
+    border: none;
+}
+
+.dash-icon-left-side{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-content-right-side{
+    width: 85%;
+    padding: 2%;
+    /* border: solid 1px gray; */
+    border: none;
+}
+
+.div-aviso-from{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+    margin: 2% 0;
+}
+
+.div-aviso-sumary{
+    font-size: .8em;
+    margin: 5% 0 0;
+}
+    

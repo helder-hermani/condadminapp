@@ -1,0 +1,99 @@
+hr{
+    margin: 5% 0;
+    width: 100%;
+}
+
+h2{
+    margin: 1% 0;
+    width: 100%;
+    text-align: center;
+}
+
+.instruction{
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.instruction p{
+    margin-left: 2%;
+}
+
+.myUser-frame{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2%;
+    border-radius: 2px;
+    border: solid 1px #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.myUser-frame-selected{
+    background-color: rgba(61, 240, 54, .6);
+}
+
+.div-avatar{
+    flex: 1;
+}
+
+.avatar{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div-details{
+    flex: 7;
+    padding: 2%;
+    overflow: scroll;
+}
+
+
+.div-detail-userName{
+    font-weight: bold;
+}
+
+.div-selected{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .hideElement{
+        display: none;
+    }
+
+    .instruction{
+        margin: 2% 0;
+    }
+
+    .users-board{
+        /* border: solid 1px green; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+    }
+
+    .myUser-frame:hover{
+        background-color: #f5edab;
+    }
+
+    .avatar{
+        height: 80px;
+        width: 80px;
+    }
+
+    .div-detail-userName{
+        margin-bottom: 3%;
+    }
+
+}

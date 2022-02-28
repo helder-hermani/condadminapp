@@ -1,0 +1,50 @@
+hr{
+    margin: 5% 0;
+    width: 100%;
+}
+/* .content-newuser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: scroll;
+} */
+
+.page-content{
+    /* border: solid 1px green; */
+}
+
+
+.div-bar-saveCancel{
+     padding: 10%;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.btnForm:hover{
+    filter: opacity(50%);
+}
+
+.btnSave{
+    background-color: #64B5F6;
+    color: black;
+}
+
+.btnReset{
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+}
+
+
+@media (min-width: 600px) {
+    /* .home-container{
+        width: 70%;
+        margin: 0 15%;
+    } */
+    .hideElement{
+        display: none;
+    }
+
+}

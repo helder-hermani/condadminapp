@@ -1,0 +1,30 @@
+.appfootermenu-container{
+    padding: 3% 10%;
+    height: 9vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: space-between;
+}
+
+.appfootermenu-container div{
+    color: rgba(255,255,255,.8);
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: solid 1px transparent;
+    transition: all .8s;
+}
+
+.appfootermenu-container div:hover{
+    border: solid 1px white;
+}
+
+@media (min-width: 600px) {
+    .appfootermenu-container div{
+        padding: 2%;
+    }
+}

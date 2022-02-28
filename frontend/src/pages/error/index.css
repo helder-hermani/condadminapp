@@ -1,0 +1,82 @@
+.div-error-main{
+    height: 100vh;
+    width: 100vw;
+}
+.error-screen{
+    height: 100%;
+    width: 100%;
+    padding: 15% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 3px black;
+    background-color: white;
+}
+
+.msg-header{
+    position: relative;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    width: 80%;
+    padding: 2% 5%;
+}
+
+.msg-header h1{
+    width: 100%;
+    text-align: right;
+    color: rgba(16, 97, 16, 0.8);
+}
+
+.p-error{
+    width: 100%;
+    text-align: center;
+}
+
+.errorTitle{
+    color: red;
+    font-weight: bolder;
+}
+
+.errorMessage{
+    color: rgba(0, 0, 0, .7);
+}
+
+.btn{
+    padding: 5% 20%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(101, 181, 246,.5);
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.div-image{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+}
+
+.backImg-forbidden{
+    background-image: url('../../assets/pics/stop.png');
+}
+
+.backImg-fail{
+    background-image: url('../../assets/pics/denied01.png');
+}
+
+
+@media (min-width: 600px) {
+    .div-error-main{
+        display: flex;
+        justify-content: center;
+        padding: 2% 0;
+        background-color: rgb(3, 31, 3);
+    }
+    .error-screen{
+        width: 30%;
+        height: 100%;
+        padding: 2% 5%;
+    }
+}
